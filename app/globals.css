@@ -1,26 +1,34 @@
+@import "@solana/wallet-adapter-react-ui/styles.css";
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary-brand: #5d4bff;
+  --color-primary-brand-inactive: #5d4bffb2;
+  --color-gray2-text: #7a7a7a;
+  --color-primary-accent: #eeecfe;
+  --color-positive: #00c33a;
+  --color-gray-card: #f6f6f6;
+  --color-gold-badge: #fef9e6;
+  --color-gold-primary-brand: #ecb900;
+  --color-gray1-text: #b8b8b8;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .shadow-logo {
+    box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 0.07);
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  .shadow-positive-glow {
+    box-shadow: 0px 0px 5px 4px rgb(0 195 58 / 0.2);
+  }
+  .shadow-badge {
+    box-shadow: 0px 1px 8px 0px rgb(0 0 0 / 0.1);
+  }
+  .shadow-wallet {
+    box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 0.07);
+  }
+  .font-neuebit {
+    font-family: var(--font-ppneuebit), monospace;
+  }
+  .font-aeonik {
+    font-family: var(--font-aeonik), system-ui;
+  }
 }
