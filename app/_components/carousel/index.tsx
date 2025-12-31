@@ -2,6 +2,7 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 
+import XIcon from "@/public/socials/x.svg";
 import DiscordIcon from "@/public/socials/discord.svg";
 import { useRouter } from "next/navigation";
 import { urls } from "@/app/const/urls";
@@ -60,6 +61,35 @@ export const DiscoveryCarousel = () => {
       badge: (
         <Badge
           label="EARN 20 PTS"
+          icon={<GoldLogo className="size-4" />}
+          variant="gold"
+          className="pl-3 pr-4"
+        />
+      )
+    },
+    {
+      icon: <XIcon className="text-primary-brand scale-[-.8]" />,
+      background: {
+        src: "/carousel/default-carousel-bg.png",
+        width: 880,
+        height: 655,
+        top: -143,
+        left: 0,
+        opacity: 0.1
+      },
+      heading: "X/Twitter",
+      subheading: "Make some noise on the timeline.",
+      primaryCta: {
+        label: "FOLLOW US",
+        onClick: () => router.push(urls.x)
+      },
+      secondaryCta: {
+        label: "LEARN MORE",
+        onClick: () => router.push(urls.about)
+      },
+      badge: (
+        <Badge
+          label="EARN 10 PTS"
           icon={<GoldLogo className="size-4" />}
           variant="gold"
           className="pl-3 pr-4"

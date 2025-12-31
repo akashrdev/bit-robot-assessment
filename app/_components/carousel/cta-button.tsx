@@ -25,7 +25,7 @@ export const CarouselCtaButton = ({
     <button
       onClick={onClick}
       className={twMerge(
-        "rounded-lg text-sm font-bold h-8.5 px-2 cursor-pointer font-neuebit",
+        "rounded-lg text-sm font-bold h-8.5 px-2 cursor-pointer font-neuebit min-w-20",
         variants[variant],
         className
       )}
